@@ -1,8 +1,10 @@
+import profileImgUrl from "../assets/profile-thumbnail.png";
+
 export const TestimonialCard: React.FC = () => {
   return (
     <div>
       <div className="header">
-        <img src="" alt="A profile photo of Sarah Dole." />
+        <img src={profileImgUrl} alt="A profile photo of Sarah Dole." />
         <p>Sarah Dole</p>
         <p>@sarahdole</p>
       </div>
