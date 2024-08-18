@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 *storybook.log
+
+# Tailwind CSS compiled output
+src/output.css
