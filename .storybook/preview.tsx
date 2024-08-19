@@ -1,3 +1,4 @@
+import React from "react";
 import type { Preview } from "@storybook/react";
 import "../src/output.css";
 
@@ -10,6 +11,13 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <div className="font-noto-sans">
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 export default preview;
