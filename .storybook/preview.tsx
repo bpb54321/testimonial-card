@@ -13,7 +13,7 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <div className="font-noto-sans">
+      <div className="font-noto-sans antialiased">
         <Story />
       </div>
     ),

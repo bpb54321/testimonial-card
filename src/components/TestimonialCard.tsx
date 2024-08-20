@@ -10,8 +10,10 @@ export const TestimonialCard: React.FC = () => {
           alt="A profile photo of Sarah Dole."
         />
         <div>
-          <p>Sarah Dole</p>
-          <p>@sarahdole</p>
+          <p className="font-semibold text-lg text-justify text-neutral-900">
+            Sarah Dole
+          </p>
+          <p className="font-normal text-sm text-neutral-600">@sarahdole</p>
         </div>
       </div>
       <blockquote className="font-normal text-base text-neutral-600">
