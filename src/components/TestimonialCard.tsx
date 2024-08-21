@@ -2,7 +2,10 @@ import profileImgUrl from "../assets/profile-thumbnail.png";
 
 export const TestimonialCard: React.FC = () => {
   return (
-    <div className="bg-white p-6 rounded-lg w-[340px] flex flex-col gap-4 shadow">
+    <div
+      className="bg-white p-6 rounded-lg w-[340px] flex flex-col gap-4 shadow"
+      data-testid="testimonial-card"
+    >
       <div className="flex gap-4">
         <img
           className="w-12 h-12"
