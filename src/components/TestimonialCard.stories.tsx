@@ -27,4 +27,87 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {};
+export const Primary: Story = {
+  decorators: [
+    (Story) => (
+      <>
+        <style>
+          {`
+          html {
+            font-size: 16px;
+          }
+        `}
+        </style>
+        <Story />
+      </>
+    ),
+  ],
+};
+
+export const FontSizeLarge: Story = {
+  decorators: [
+    (Story) => (
+      <>
+        <style>
+          {`
+          html {
+            font-size: 20px;
+          }
+        `}
+        </style>
+        <Story />
+      </>
+    ),
+  ],
+};
+
+export const FontSizeVeryLarge: Story = {
+  decorators: [
+    (Story) => (
+      <>
+        <style>
+          {`
+          html {
+            font-size: 24px;
+          }
+        `}
+        </style>
+        <Story />
+      </>
+    ),
+  ],
+};
+
+export const FontSizeSmall: Story = {
+  decorators: [
+    (Story) => (
+      <>
+        <style>
+          {`
+          html {
+            font-size: 12px;
+          }
+        `}
+        </style>
+        <Story />
+      </>
+    ),
+  ],
+};
+
+export const FontSizeVerySmall: Story = {
+  decorators: [
+    (Story) => (
+      <>
+        <style>
+          {`
+          html {
+            font-size: 9px;
+          }
+        `}
+        </style>
+        <Story />
+      </>
+    ),
+  ],
+};
