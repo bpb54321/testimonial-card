@@ -1,6 +1,10 @@
 import profileImgUrl from "../assets/profile-thumbnail.png";
 
-export const TestimonialCard: React.FC = () => {
+interface TestimonialCardProps {
+  quote: string;
+}
+
+export const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote }) => {
   return (
     <div
       className="bg-white p-6 rounded-lg w-[340px] flex flex-col gap-4 shadow"
@@ -19,10 +23,8 @@ export const TestimonialCard: React.FC = () => {
           <p className="font-normal text-sm text-neutral-600">@sarahdole</p>
         </div>
       </div>
-      <blockquote className="font-normal text-base text-neutral-600">
-        I've been searching for high-quality abstract images for my design
-        projects, and I'm thrilled to have found this platform. The variety and
-        depth of creativity are astounding!
+      <blockquote className="font-normal text-base text-neutral-600 line-clamp-6">
+        {quote}
       </blockquote>
     </div>
   );
