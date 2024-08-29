@@ -1,29 +1,30 @@
 import React from "react";
 import type { Preview } from "@storybook/react";
 import "../src/output.css";
+import { testViewports } from "../test-viewports";
 
 const customViewports = {
   desktop: {
-    name: "Desktop",
+    name: testViewports.desktop.name,
     styles: {
-      width: "1440px",
-      height: "768px",
+      width: `${testViewports.desktop.width}px`,
+      height: `${testViewports.desktop.height}px`,
     },
     type: "desktop",
   },
   tablet: {
-    name: "Tablet",
+    name: testViewports.tablet.name,
     styles: {
-      width: "768px",
-      height: "1024px",
+      width: `${testViewports.tablet.width}px`,
+      height: `${testViewports.tablet.height}px`,
     },
     type: "tablet",
   },
   mobile: {
-    name: "Mobile",
+    name: testViewports.mobile.name,
     styles: {
-      width: "375px",
-      height: "812px",
+      width: `${testViewports.mobile.width}px`,
+      height: `${testViewports.mobile.height}px`,
     },
     type: "mobile",
   },
