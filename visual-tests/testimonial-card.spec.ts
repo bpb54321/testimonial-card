@@ -34,4 +34,14 @@ test.describe("testimonial card", () => {
 
     await expect(page).toHaveScreenshot();
   });
+
+  ["large", "very-large", "small", "very-small"].forEach((fontSize) => {
+    test(`root font size ${fontSize}`, async ({ page }) => {
+      await page.goto(
+        `iframe.html?args=&id=testimonialcard--font-size-${fontSize}&viewMode=story`
+      );
+
+      await expect(page).toHaveScreenshot();
+    });
+  });
 });
