@@ -2,9 +2,15 @@ import profileImgUrl from "../assets/profile-thumbnail.png";
 
 interface TestimonialCardProps {
   quote: string;
+  name: string;
+  handle: string;
 }
 
-export const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote }) => {
+export const TestimonialCard: React.FC<TestimonialCardProps> = ({
+  quote,
+  name,
+  handle,
+}) => {
   return (
     <div
       className="bg-white p-6 rounded-lg w-[340px] flex flex-col gap-4 shadow"
@@ -18,9 +24,9 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote }) => {
         />
         <div>
           <p className="font-semibold text-lg text-justify text-neutral-900">
-            Sarah Dole
+            {name}
           </p>
-          <p className="font-normal text-sm text-neutral-600">@sarahdole</p>
+          <p className="font-normal text-sm text-neutral-600">{handle}</p>
         </div>
       </div>
       <blockquote className="font-normal text-base text-neutral-600 line-clamp-6">

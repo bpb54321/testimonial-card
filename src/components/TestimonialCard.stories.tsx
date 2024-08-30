@@ -25,6 +25,8 @@ const meta = {
       "I've been searching for high-quality abstract images for my design " +
       "projects, and I'm thrilled to have found this platform. The variety and " +
       "depth of creativity are astounding!",
+    name: "Sarah Dole",
+    handle: "@sarahdole",
   },
 } satisfies Meta<typeof TestimonialCard>;
 
