@@ -23,7 +23,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
           alt="A profile photo of Sarah Dole."
         />
         <div>
-          <p className="font-semibold text-lg text-justify text-neutral-900">
+          <p className="font-semibold text-lg text-neutral-900 line-clamp-2">
             {name}
           </p>
           <p className="font-normal text-sm text-neutral-600">{handle}</p>

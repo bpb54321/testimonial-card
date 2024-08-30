@@ -142,3 +142,13 @@ export const LongQuote: Story = {
     quote: longQuote,
   },
 };
+
+const longName =
+  "Alexandria Elizabeth Victoria Catherine " +
+  "Isabella Margaret Sophia Charlotte Amelia Grace Evelyn Rose Harper";
+export const LongName: Story = {
+  args: {
+    name: longName,
+    handle: "@alexelizabeth",
+  },
+};

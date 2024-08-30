@@ -25,4 +25,11 @@ test.describe("testimonial card", () => {
       await expect(page).toHaveScreenshot();
     });
   });
+  test("long name", async ({ page }) => {
+    await page.goto(
+      "iframe.html?args=&id=testimonialcard--long-name&viewMode=story"
+    );
+
+    await expect(page).toHaveScreenshot();
+  });
 });
