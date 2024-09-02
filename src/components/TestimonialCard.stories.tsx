@@ -152,3 +152,11 @@ export const LongName: Story = {
     handle: "@alexelizabeth",
   },
 };
+
+const longHandle =
+  "@areallylonghandleloremipsumdolorsitametconsecteturadipiscingelitSeddoeiusmod";
+export const LongHandle: Story = {
+  args: {
+    handle: longHandle,
+  },
+};

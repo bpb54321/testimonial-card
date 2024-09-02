@@ -26,7 +26,9 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
           <p className="font-semibold text-lg text-neutral-900 line-clamp-2">
             {name}
           </p>
-          <p className="font-normal text-sm text-neutral-600">{handle}</p>
+          <p className="font-normal text-sm text-neutral-600 line-clamp-1 break-all">
+            {handle}
+          </p>
         </div>
       </div>
       <blockquote className="font-normal text-base text-neutral-600 line-clamp-6">
