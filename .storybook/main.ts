@@ -4,7 +4,6 @@ const config: StorybookConfig = {
   stories: ["../src/**/*.stories.tsx"],
   addons: [
     "@storybook/addon-essentials",
-    "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
   ],
