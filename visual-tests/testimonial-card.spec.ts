@@ -25,9 +25,23 @@ test.describe("testimonial card", () => {
       await expect(page).toHaveScreenshot();
     });
   });
+  test("long quote", async ({ page }) => {
+    await page.goto(
+      "iframe.html?args=&id=testimonialcard--long-quote&viewMode=story"
+    );
+
+    await expect(page).toHaveScreenshot();
+  });
   test("long name", async ({ page }) => {
     await page.goto(
       "iframe.html?args=&id=testimonialcard--long-name&viewMode=story"
+    );
+
+    await expect(page).toHaveScreenshot();
+  });
+  test("long handle", async ({ page }) => {
+    await page.goto(
+      "iframe.html?args=&id=testimonialcard--long-handle&viewMode=story"
     );
 
     await expect(page).toHaveScreenshot();
