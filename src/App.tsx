@@ -9,7 +9,7 @@ const handle = "@sarahdole";
 
 function App() {
   return (
-    <div className="flex flex-row w-full justify-center h-screen items-center">
+    <div className="flex flex-row w-full justify-center h-screen items-center bg-gradient-to-b from-gray-50 to-[#d2d6db]">
       <TestimonialCard quote={quote} name={name} handle={handle} />
     </div>
   );
