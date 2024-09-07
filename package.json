@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && npm run tailwind && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "tailwind:watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "tailwind": "tailwindcss -i ./src/input.css -o ./src/output.css",
+    "tailwind:watch": "npm run tailwind -- --watch"
   },
   "dependencies": {
     "react": "^18.3.1",
